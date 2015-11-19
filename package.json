@@ -1,0 +1,21 @@
+{
+  "name": "kaskade",
+  "version": "0.0.1",
+  "description": "demo tool that allows quicken users to payout more easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Sammons",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "node-quickbooks": "^1.0.25",
+    "node-uuid": "^1.4.7",
+    "querystring": "^0.2.0",
+    "request": "^2.66.0",
+    "session": "^0.1.0"
+  }
+}
