@@ -58,10 +58,14 @@ intuit.ipp.anywhere.setup({
     payments : false    // set to true if using Payments API
   }
 });
-$('.intuitPlatformConnectButton').click(function(e){
-	$.get('where-to-redirect-to', function() {
-		
-	})
+$.get('/qbloggedin',function(data) {
+	if (data == "true") window.location.href = "/launch.html";
 })
+setInterval(function() {
+	$.get('/qbloggedin',function(data) {
+		console.log(data)
+		if (data.loggedIn) window.location.href = "/launch.html";
+	})
+}, 1000);
 </script>
 </html>

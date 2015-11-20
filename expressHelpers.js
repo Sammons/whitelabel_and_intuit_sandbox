@@ -8,7 +8,9 @@ module.exports.redirect = function(path) {
 }
 
 module.exports.logRequests = function(req, res, done) {
-	if (config.accessLogs)
+	if (config.accessLogs) {
 		log.info("METHOD", req.method, "URL", req.url,"HEADERS:", req.headers,"BODY", req.body)
+	}
+		
 	done();
 }

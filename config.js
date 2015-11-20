@@ -1,7 +1,7 @@
 var credentials = require('./credentials.js');
 
 module.exports = {
-	"siteBase" : "http://127.0.0.1:3000",
+	"siteBase" : "http://localhost:3000",
 	"port" : "3000",
 	"debug" : true,
 	"accessLogs": true,

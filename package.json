@@ -16,6 +16,7 @@
     "node-uuid": "^1.4.7",
     "querystring": "^0.2.0",
     "request": "^2.66.0",
-    "session": "^0.1.0"
+    "session": "^0.1.0",
+    "session-file-store": "0.0.22"
   }
 }
